@@ -33,7 +33,9 @@ npm run edit
 
 # Usage 2
 // GUI / WebApp Version
+// Go to website or install by:
+
 ```
-hag
+
 
 ```
