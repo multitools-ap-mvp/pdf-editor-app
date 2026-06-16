@@ -1,7 +1,7 @@
 {
   "name": "pdf-ticket-editor",
-  "version": "1.0.0",
-  "description": "PDF Ticket Editor - Auto-detect fields, edit, and regenerate PDF",
+  "version": "0.3.1",
+  "description": "PDF Ticket Editor - Auto-detect fields, edit, and regenerate a new PDF ticket",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
