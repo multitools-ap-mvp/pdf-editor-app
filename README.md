@@ -2,19 +2,29 @@
 // Another Useful MultiTools App
 // MultiTools PDF Editor
 // V0.3.1 Public Beta
-
+// Load pdf > Edit as html > create pdf
 ---
+
 # Structured PDF Editor
+
 // PDF → HTML → Edit → PDF
 // Convert any PDF to HTML
-// With  document structure intact
+// With document structure intact
+// Web Editor auto detects objects
+// Edit what you want
+// Create New PDF 
+// Download or Mail PDF
 
 ---
 
-# Usage
-// Selfhost Version
-// GUI Version
-// WebApp
+# 4 Different Setups! Same App! 
+
+// Selfhost Terminal Version
+// GUI Version Installed
+// Dockerfile Setup
+// Hosted WebApp
+
+**Choose your preferred setup & Launch App to start editing**
 
 **Selfhost**
 ```
@@ -61,4 +71,5 @@ npm start
 **Then open http://localhost:3000**
 
 ```
-
+# PWA WebApp
+**Go to https://pdf.apexmultitools.se/**
