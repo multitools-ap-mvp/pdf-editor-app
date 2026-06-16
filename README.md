@@ -9,7 +9,8 @@
 
  
 # Usage
-// 
+// Selfhost Version
+
 ```
 # 1. Create App Directory
 git clone
@@ -27,4 +28,12 @@ npm run generate
 
 # 5. (Optional) Start web editor
 npm run edit
+```
+---
+
+# Usage 2
+// GUI / WebApp Version
+```
+hag
+
 ```
