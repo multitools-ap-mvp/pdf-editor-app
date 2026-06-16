@@ -170,7 +170,7 @@ function setZoom(newZoom) {
 
 // Generate PDF
 generateBtn.addEventListener('click', async () => {
-  showLoading('Generating PDF...');
+  showLoading('Generating PDF Ticket...');
   
   const html = `
     <!DOCTYPE html>
