@@ -1,0 +1,17 @@
+{
+  "name": "pdf-ticket-editor",
+  "version": "1.0.0",
+  "description": "PDF → HTML → Edit → PDF for structured documents",
+  "main": "src/index.js",
+  "scripts": {
+    "extract": "node src/extract.js",
+    "generate": "node src/generate.js",
+    "edit": "node src/server.js",
+    "build": "npm run extract && npm run generate"
+  },
+  "dependencies": {
+    "pdf-parse": "^1.1.1",
+    "playwright": "^1.45.0",
+    "express": "^4.19.2"
+  }
+}
