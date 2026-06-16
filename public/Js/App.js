@@ -199,3 +199,149 @@ generateBtn.addEventListener('click', async () => {
         }
         .header-left { font-size: 20pt; font-weight: 800; color: #e60000; }
         .header-right { font-size: 10pt; color: #
+          .header-right { font-size: 10pt; color: #888; }
+        .passenger-info { margin-bottom: 30px; }
+        .passenger-name {
+          font-size: 26pt; font-weight: 800; color: #1a1a1a;
+          margin-bottom: 12px; letter-spacing: -0.5px;
+        }
+        .meta-row {
+          display: flex; gap: 40px; font-size: 10pt; color: #666;
+        }
+        .meta-item strong {
+          display: block; font-size: 8pt; text-transform: uppercase;
+          letter-spacing: 1px; color: #999; margin-bottom: 4px;
+        }
+        .journey-leg {
+          background: #f8f9fa; border-radius: 10px;
+          padding: 20px; margin-bottom: 20px;
+          border-left: 4px solid #e60000;
+        }
+        .leg-header {
+          display: flex; justify-content: space-between;
+          margin-bottom: 15px; padding-bottom: 10px;
+          border-bottom: 1px solid #e0e0e0;
+        }
+        .leg-date { font-size: 14pt; font-weight: 700; color: #1a1a1a; }
+        .leg-route { font-size: 10pt; color: #888; }
+        .leg-body {
+          display: flex; align-items: center; gap: 20px;
+        }
+        .time-block { text-align: center; min-width: 80px; }
+        .time {
+          font-size: 22pt; font-weight: 800; color: #1a1a1a; line-height: 1;
+        }
+        .time-label {
+          font-size: 8pt; color: #aaa; text-transform: uppercase;
+          margin-top: 4px; letter-spacing: 1px;
+        }
+        .location {
+          font-size: 11pt; font-weight: 600; color: #444; margin-top: 6px;
+        }
+        .arrow {
+          font-size: 20pt; color: #e60000; font-weight: 800;
+        }
+        .transport-info { margin-left: auto; text-align: right; }
+        .transport-badge {
+          background: #e60000; color: white;
+          padding: 8px 16px; border-radius: 20px;
+          font-size: 9pt; font-weight: 700;
+          text-transform: uppercase; letter-spacing: 0.5px;
+          display: inline-block;
+        }
+        .class-info {
+          margin-top: 8px; font-size: 9pt; color: #888; font-style: italic;
+        }
+        .conditions {
+          margin-top: 30px; padding-top: 15px;
+          border-top: 1px solid #eee;
+          font-size: 8pt; line-height: 1.6; color: #888;
+        }
+        .conditions h3 {
+          font-size: 9pt; color: #444; margin-bottom: 8px;
+          text-transform: uppercase; letter-spacing: 1px;
+        }
+        .seller { margin-top: 10px; font-weight: 700; color: #333; }
+        [data-field] { border: none !important; background: transparent !important; }
+      </style>
+    </head>
+    <body>
+      ${previewFrame.innerHTML}
+    </body>
+    </html>
+  `;
+  
+  try {
+    const res = await fetch('/api/generate', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ html })
+    });
+    
+    const data = await res.json();
+    hideLoading();
+    
+    if (data.success) {
+      showToast('PDF generated! Downloading...', 'success');
+      const a = document.createElement('a');
+      a.href = data.downloadUrl;
+      a.download = 'edited-ticket.pdf';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+    } else {
+      showToast(data.error || 'Generation failed', 'error');
+    }
+  } catch (err) {
+    hideLoading();
+    showToast('Generation failed: ' + err.message, 'error');
+  }
+});
+
+// Reset
+resetBtn.addEventListener('click', () => {
+  currentFields = [];
+  activeFieldId = null;
+  fieldPanel.style.display = 'none';
+  actions.style.display = 'none';
+  previewFrame.style.display = 'none';
+  emptyState.style.display = 'block';
+  previewFrame.innerHTML = '';
+  status.textContent = 'Upload a PDF to begin';
+  pdfInput.value = '';
+  zoom = 1;
+  previewFrame.style.transform = 'scale(1)';
+  zoomLevel.textContent = '100%';
+});
+
+// Utilities
+function showLoading(text) {
+  loadingText.textContent = text;
+  loadingOverlay.style.display = 'flex';
+}
+
+function hideLoading() {
+  loadingOverlay.style.display = 'none';
+}
+
+function showToast(message, type = 'info') {
+  toast.textContent = message;
+  toast.className = 'toast show ' + type;
+  setTimeout(() => toast.classList.remove('show'), 3000);
+}
+
+function escapeHtml(text) {
+  const div = document.createElement('div');
+  div.textContent = text;
+  return div.innerHTML;
+}
+
+// Keyboard shortcuts
+document.addEventListener('keydown', (e) => {
+  if (e.ctrlKey || e.metaKey) {
+    if (e.key === 's') {
+      e.preventDefault();
+      if (currentFields.length > 0) generateBtn.click();
+    }
+  }
+});
