@@ -24,7 +24,20 @@
 // Dockerfile Setup
 // Hosted WebApp
 
+# Quick Install
+```
+# Using wget
+
+wget -qO- https://raw.githubusercontent.com/YOUR_USERNAME/pdf-ticket-editor/main/install.sh | bash
+
+# Or curl
+
+curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/pdf-ticket-editor/main/install.sh | bash
+
+```
+
 **Choose your preferred setup & Launch App to start editing**
+
 
 **Selfhost**
 ```
