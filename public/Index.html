@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF Ticket Editor</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="app">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <polyline points="14 2 14 8 20 8"/>
+          <line x1="16" y1="13" x2="8" y2="13"/>
+          <line x1="16" y1="17" x2="8" y2="17"/>
+        </svg>
+        <span>Ticket Editor</span>
+      </div>
+      
+      <div class="upload-zone" id="uploadZone">
+        <input type="file" id="pdfInput" accept=".pdf" hidden>
+        <div class="upload-content">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="17 8 12 3 7 8"/>
+            <line x1="12" y1="3" x2="12" y2="15"/>
+          </svg>
+          <p>Drop PDF here or <span>browse</span></p>
+          <small>Max 10MB</small>
+        </div>
+      </div>
+      
+      <div class="field-panel" id="fieldPanel" style="display:none;">
+        <h3>Detected Fields</h3>
+        <div class="field-list" id="fieldList"></div>
+      </div>
+      
+      <div class="actions" id="actions" style="display:none;">
+        <button class="btn btn-primary" id="generateBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          Export PDF
+        </button>
+        <button class="btn btn-secondary" id="resetBtn">Reset</button>
+      </div>
+    </aside>
+    
+    <!-- Main Preview Area -->
+    <main class="preview-area">
+      <div class="toolbar">
+        <div class="zoom-controls">
+          <button id="zoomOut">−</button>
+          <span id="zoomLevel">100%</span>
+          <button id="zoomIn">+</button>
+        </div>
+        <div class="status" id="status">Upload a PDF to begin</div>
+      </div>
+      
+      <div class="preview-container" id="previewContainer">
+        <div class="empty-state" id="emptyState">
+          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <line x1="16" y1="13" x2="8" y2="13"/>
+            <line x1="16" y1="17" x2="8" y2="17"/>
+          </svg>
+          <h2>Upload a PDF Ticket</h2>
+          <p>We'll auto-detect all editable fields so you can modify names, dates, times, and more.</p>
+        </div>
+        <div class="preview-frame" id="previewFrame" style="display:none;"></div>
+      </div>
+    </main>
+  </div>
+  
+  <!-- Loading Overlay -->
+  <div class="loading-overlay" id="loadingOverlay" style="display:none;">
+    <div class="spinner"></div>
+    <p id="loadingText">Processing PDF...</p>
+  </div>
+  
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+  
+  <script src="/js/app.js"></script>
+</body>
+</html>
