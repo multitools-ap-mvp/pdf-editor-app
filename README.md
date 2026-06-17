@@ -19,6 +19,8 @@ Load pdf > Edit as html > create pdf
 
 * ApexMultiTools Evil Portal WiFi
 
+* More Apps are being audited and secured & Will be active on Github Soon! Check our our Wiki for more info.
+
 
 ---
 ---
@@ -46,14 +48,20 @@ wget -qO- https://raw.githubusercontent.com/multitools-ap-mvp/pdf-ticket-editor/
 - Web Editor auto detects objects
 - Edit what you want
 - Create New PDF 
-- Download or Mail Your .PDF 
+- Download or Mail Your .PDF
+- No Account Needed! 
 
 **Registration Is not active And Usage is open & FREE during BETA Testing**
 
 ---
 
-# 4 Different Setups! Same App!
-# Use our Editor the way you want! 
+# 4 Different Setups! Same App...
+# Use our Editor the way you want!
+-
+# WebApp
+# Selfhost TUI | Selfhost GUI 
+# CLi | Docker
+# BASH | POWERSHELL
 
 **Setups**
 
