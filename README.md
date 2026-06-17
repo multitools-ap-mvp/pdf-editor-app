@@ -1,20 +1,32 @@
 # **Apex Multi Tools PDF Editor V0.3.1**
 
-The Thanos of PDF Editors
-MultiTools PDF Editor
--
+**The Thanos of PDF Editors**
+**Open Source | FREE**
+
 V0.3.1 Public Beta
 Load pdf > Edit as html > create pdf
 ---
 <img width="364" height="289" alt="1781599322504" src="https://github.com/user-attachments/assets/ce0fd5d3-deb1-4cd7-b0a3-c84135a885a3" />
 
+- **A Apex Multi Tools App**
+- **Check Out Or Other Apps**
+
+* MultiTools PDF Editor
+ 
+* ApexMultiTools Esport Betting Platform With ApexCoin Virtual Currency
+
+* ApexMultiTools Encrypted Communication Framework
+
+* ApexMultiTools Evil Portal WiFi
+
+
 ---
 ---
 > MultiTools PDF Editor is the future of FREE Open source PDF Editor! 
 
-> Installation/Usage You can use PDF Editor in many ways and on any OS!
+> **Installation/Usage** PDF Editor can be used in many ways & on ANY OS!
 
-> FINALY! A Simple Easy to use PDF Editor
+> **FINALY!** A Simple Easy to use PDF to HTML Converter that keeps original structure. Edit HTML And Convert to PDF.
 
 **One-line install command**
 ```
@@ -34,10 +46,9 @@ wget -qO- https://raw.githubusercontent.com/multitools-ap-mvp/pdf-ticket-editor/
 - Web Editor auto detects objects
 - Edit what you want
 - Create New PDF 
-- Download or Mail PDF
+- Download or Mail Your .PDF 
 
-**Registration And Usage is open & 
-FREE during BETA Testing**
+**Registration Is not active And Usage is open & FREE during BETA Testing**
 
 ---
 
@@ -142,8 +153,14 @@ curl -fsSL https://raw.githubusercontent.com/multitools-ap-mvp/pdf-ticket-editor
 ---
 
 # Stack 
-App is being powered by a NODE.JS Backend, simple HTML - Javascript Frontend. Docker integration & Python setup scripts.
-Very Simple, Very basic, Very good! showing back to basic pays of.
+App is being powered by a NODE.JS Backend, simple HTML - Javascript Frontend. Docker integration & Python setup scripts. Postgres database schema is incl but not active in beta.
+
+Very Simple, Very basic, Very good! showing back to basic pays of sometimes.
+
+// Want to Join ApexMultiTools? 
+// Contact Amstaff
+// Wiki for all MultiTools is Online
+// LINK 
 
 
 
