@@ -36,9 +36,10 @@ Free during BETA Testing.
 
 # 4 Different Setups! Same App!
 # Use our Editor the way you want! 
+
 **Version & Setup**
 
-* Selfhost Terminal Version
+* **Selfhost Terminal Version**
 ```
 **Selfhost Anonymous Version**
 
@@ -63,13 +64,14 @@ npm run edit
 
 ---
 
-* PWA WebApp "With Ads" 
+* **PWA WebApp "With Ads"**
 ```
 **Go to https://pdf.apexmultitools.se/**
 ```
 
 
-* GUI Version local Setup
+* **GUI Version local Setup**
+
 // GUI WebApp Version
 // Same as hosted website Version 
 // But you control your own data
@@ -96,7 +98,7 @@ npm start
 
 ```
 
-* Dockerfile Option
+* **Dockerfile Option**
 
 ```
 git clone https://github.com/your-username/multitools-ap-mvp.git
@@ -109,12 +111,10 @@ docker compose ps
 
 ```
 
-
-* Hosted WebApp (With Ads)
-
 **Or Use Terminal Installation**
  
 # Quick Install
+
 ```
 # Using wget
 
@@ -130,9 +130,5 @@ curl -fsSL https://raw.githubusercontent.com/multitools-ap-mvp/pdf-ticket-editor
 **Launch App to start editing**
 
 ```
-
-# PWA WebApp "With Ads" 
-
-**Go to https://pdf.apexmultitools.se/**
 
 
