@@ -6,7 +6,7 @@
     sets up Node.js app or Docker, and launches the PDF Ticket Editor.
 .EXAMPLE
     # One-line install:
-    # irm https://raw.githubusercontent.com/YOUR_USERNAME/pdf-ticket-editor/main/install.ps1 | iex
+    # irm https://raw.githubusercontent.com/multitools-ap-mvp/pdf-ticket-editor/main/install.ps1 | iex
     
     # Or download and run:
     # .\install.ps1
@@ -25,7 +25,7 @@ if ($Help) {
 PDF Ticket Editor - Windows Installer
 
 Usage:
-  irm https://raw.githubusercontent.com/YOUR_USERNAME/pdf-ticket-editor/main/install.ps1 | iex
+  irm https://raw.githubusercontent.com/multitools-ap-mvp/pdf-ticket-editor/main/install.ps1 | iex
 
 Parameters:
   -Docker       Force Docker installation
@@ -38,8 +38,8 @@ Parameters:
 }
 
 # Configuration
-$RepoUrl = "https://github.com/YOUR_USERNAME/pdf-ticket-editor.git"
-$RepoRaw = "https://raw.githubusercontent.com/YOUR_USERNAME/pdf-ticket-editor/main"
+$RepoUrl = "https://github.com/multitools-ap-mvp/pdf-ticket-editor.git"
+$RepoRaw = "https://raw.githubusercontent.com/multitools-ap-mvp/pdf-ticket-editor/main"
 $AppName = "pdf-ticket-editor"
 $DefaultPort = 3000
 $NodeMinVersion = [version]"18.0.0"
