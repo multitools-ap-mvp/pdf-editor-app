@@ -1,16 +1,16 @@
 #!/bin/bash
 # PDF Ticket Editor - One-line installer
-# Usage: wget -qO- https://raw.githubusercontent.com/YOUR_USERNAME/pdf-ticket-editor/main/install.sh | bash
-#    OR: curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/pdf-ticket-editor/main/install.sh | bash
+# Usage: wget -qO- https://raw.githubusercontent.com/multitools-ap-mvp/pdf-ticket-editor/main/install.sh | bash
+#    OR: curl -fsSL https://raw.githubusercontent.com/multitools-ap-mvp/pdf-ticket-editor/main/install.sh | bash
 
 set -e
 
-REPO_RAW="https://raw.githubusercontent.com/YOUR_USERNAME/pdf-ticket-editor/main"
+REPO_RAW="https://raw.githubusercontent.com/multitools-ap-mvp/pdf-ticket-editor/main"
 SETUP_URL="${REPO_RAW}/setup.py"
 
 echo ""
 echo "╔══════════════════════════════════════════════════════════╗"
-echo "║     PDF Ticket Editor - Quick Installer                ║"
+echo "║  MultiTools PDF Ticket Editor - Quick Installer V0.3.1 Beta              ║"
 echo "╚══════════════════════════════════════════════════════════╝"
 echo ""
 
