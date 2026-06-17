@@ -1,5 +1,6 @@
-# Apex Multi Tools PDF Editor V0.3.1
-// Another Useful MultiTools App Shared
+# **Apex Multi Tools PDF Editor V0.3.1**
+
+// The Thanos of PDF Editors
 // MultiTools PDF Editor
 -
 // V0.3.1 Public Beta
@@ -15,29 +16,33 @@
 
 **One-line install command**
 ```
-wget -qO- https://raw.githubusercontent.com/YOUR_USERNAME/pdf-ticket-editor/main/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/multitools-ap-mvp/pdf-ticket-editor/main/install.sh | bash
 ```
 **Run your favorite Terminal & Paste install command**
+
+---
 
 # Structured PDF Editor
 
 // **Project MultiTools PDF Editor**
 // PDF → HTML → Edit → PDF
+-
 // Convert any PDF to HTML
 // With document structure intact
 // Web Editor auto detects objects
 // Edit what you want
 // Create New PDF 
 // Download or Mail PDF
-// Registration And Usage is open & 
-Free during BETA Testing.
+
+**Registration And Usage is open & 
+Free during BETA Testing**
 
 ---
 
 # 4 Different Setups! Same App!
 # Use our Editor the way you want! 
 
-**Version & Setup**
+**Setups**
 
 * **Selfhost Terminal Version**
 ```
@@ -67,6 +72,7 @@ npm run edit
 * **PWA WebApp "With Ads"**
 ```
 **Go to https://pdf.apexmultitools.se/**
+& Start Editing now! 
 ```
 
 
@@ -101,7 +107,7 @@ npm start
 * **Dockerfile Option**
 
 ```
-git clone https://github.com/your-username/multitools-ap-mvp.git
+git clone https://github.com/multitools-ap-mvp/multitools-ap-mvp.git
 
 cd pdf-ticket-editor
 
@@ -129,6 +135,13 @@ curl -fsSL https://raw.githubusercontent.com/multitools-ap-mvp/pdf-ticket-editor
 **Choose your preferred setup** 
 **Launch App to start editing**
 
-```
+---
+---
+---
+
+# Check It Out 
+
+
+
 
 
