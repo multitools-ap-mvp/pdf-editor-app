@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
 PDF Ticket Editor - Universal Installer
-Usage: wget -qO- https://raw.githubusercontent.com/YOUR_USERNAME/pdf-ticket-editor/main/setup.py | python3 -
+Usage: wget -qO- https://raw.githubusercontent.com/multitools-ap-mvp/pdf-ticket-editor/main/setup.py | python3 -
          OR
-       curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/pdf-ticket-editor/main/setup.py | python3 -
+       curl -fsSL https://raw.githubusercontent.com/multitools-ap-mvp/pdf-ticket-editor/main/setup.py | python3 -
 """
 
 import os
@@ -17,8 +17,8 @@ import urllib.request
 from pathlib import Path
 
 # Configuration
-REPO_URL = "https://github.com/YOUR_USERNAME/pdf-ticket-editor.git"
-REPO_RAW_URL = "https://raw.githubusercontent.com/YOUR_USERNAME/pdf-ticket-editor/main"
+REPO_URL = "https://github.com/multitools-ap-mvp/pdf-ticket-editor.git"
+REPO_RAW_URL = "https://raw.githubusercontent.com/multitools-ap-mvp/pdf-ticket-editor/main"
 APP_NAME = "pdf-ticket-editor"
 DEFAULT_PORT = 3000
 NODE_MIN_VERSION = "18.0.0"
