@@ -63,36 +63,10 @@ npm run edit
 
 ---
 
-# Usage 2 GUI local Setup
-// GUI WebApp Version
-// Same as hosted website Version 
-// But you control your own data
-
-// Install by:
-
+* PWA WebApp "With Ads" 
 ```
-1. Clone WebApp
-git clone https://github.com/multitools-ap-mvp/pdf-editor-app.git
-
-2.
-cd pdf-ticket-editor
-
-3.
-npm install
-
-4.
-npx playwright install chromium
-
-5.
-npm start
-
-**Then open http://localhost:3000**
-
-```
-
-# PWA WebApp "With Ads" 
-
 **Go to https://pdf.apexmultitools.se/**
+```
 
 
 * GUI Version local Setup
@@ -125,9 +99,9 @@ npm start
 * Dockerfile Option
 
 ```
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/your-username/multitools-ap-mvp.git
 
-cd your-repo-name
+cd pdf-ticket-editor
 
 docker compose up -d --build
 
@@ -154,54 +128,6 @@ curl -fsSL https://raw.githubusercontent.com/multitools-ap-mvp/pdf-ticket-editor
 
 **Choose your preferred setup** 
 **Launch App to start editing**
-
-
-**Selfhost Anonymous Version**
-```
-1. Clone App
-git clone https://github.com/multitools-ap-mvp/pdf-editor-app.git
-
-2. Install Editor
-npm install
-
-2.5. Load Source
-Put your source PDF in /input/ Directory
-
-3. Extract data from your PDF
-npm run extract
-
-4. Generate editable HTML + PDF
-npm run generate
-
-# 5. (Optional) Start web editor
-npm run edit
-```
----
-
-# Usage 2 GUI local Setup
-// GUI WebApp Version
-// Same as hosted website Version 
-// But you control your own data
-
-// Install by:
-
-```
-1. Clone WebApp
-git clone https://github.com/multitools-ap-mvp/pdf-editor-app.git
-
-2.
-cd pdf-ticket-editor
-
-3.
-npm install
-
-4.
-npx playwright install chromium
-
-5.
-npm start
-
-**Then open http://localhost:3000**
 
 ```
 
