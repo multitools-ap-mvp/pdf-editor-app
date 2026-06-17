@@ -58,14 +58,16 @@ wget -qO- https://raw.githubusercontent.com/multitools-ap-mvp/pdf-ticket-editor/
 # 4 Different Setups! Same App...
 # Use our Editor the way you want!
 -
-WebApp
-[<kbd> <br> WebApp <br> </kbd>][https://pdf.apexmultitools.se/]
-
+// WebApp
+[![Button Icon]][Link]
+<!----------------------------------------------------------------------------->
 [Link]: # 'Link with example title.'
+<!---------------------------------[ Buttons ]--------------------------------->
+[Button Icon]: https://img.shields.io/badge/Installation-EF2D5E?style=for-the-badge&logoColor=white&logo=Files
 
-# Selfhost TUI | Selfhost GUI 
-# CLi | Docker
-# BASH | POWERSHELL
+// Selfhost TUI | Selfhost GUI 
+// CLi | Docker
+// BASH | POWERSHELL
 
 **Setups**
 
