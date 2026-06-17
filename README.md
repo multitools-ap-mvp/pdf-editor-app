@@ -9,10 +9,9 @@
 
 ---
 ---
-"""
-MultiTools PDF Editor is the future of FREE Open source PDF Editor! 
+> MultiTools PDF Editor is the future of FREE Open source PDF Editor! 
 
-Installation/Usage You can use PDF Editor in many ways and on any OS!
+> Installation/Usage You can use PDF Editor in many ways and on any OS!
 
 **One-line install command**
 ```
@@ -40,10 +39,102 @@ Free during BETA Testing.
 **Version & Setup**
 
 * Selfhost Terminal Version
+```
+**Selfhost Anonymous Version**
+
+1. Clone App
+git clone https://github.com/multitools-ap-mvp/pdf-editor-app.git
+
+2. Install Editor
+npm install
+
+2.5. Load Source
+Put your source PDF in /input/ Directory
+
+3. Extract data from your PDF
+npm run extract
+
+4. Generate editable HTML + PDF
+npm run generate
+
+# 5. (Optional) Start web editor
+npm run edit
+```
+
+---
+
+# Usage 2 GUI local Setup
+// GUI WebApp Version
+// Same as hosted website Version 
+// But you control your own data
+
+// Install by:
+
+```
+1. Clone WebApp
+git clone https://github.com/multitools-ap-mvp/pdf-editor-app.git
+
+2.
+cd pdf-ticket-editor
+
+3.
+npm install
+
+4.
+npx playwright install chromium
+
+5.
+npm start
+
+**Then open http://localhost:3000**
+
+```
+
+# PWA WebApp "With Ads" 
+
+**Go to https://pdf.apexmultitools.se/**
+
 
 * GUI Version local Setup
+// GUI WebApp Version
+// Same as hosted website Version 
+// But you control your own data
+
+// Install by:
+
+```
+1. Clone WebApp
+git clone https://github.com/multitools-ap-mvp/pdf-editor-app.git
+
+2.
+cd pdf-ticket-editor
+
+3.
+npm install
+
+4.
+npx playwright install chromium
+
+5.
+npm start
+
+**Then open http://localhost:3000**
+
+```
 
 * Dockerfile Option
+
+```
+git clone https://github.com/your-username/your-repo-name.git
+
+cd your-repo-name
+
+docker compose up -d --build
+
+docker compose ps
+
+```
+
 
 * Hosted WebApp (With Ads)
 
