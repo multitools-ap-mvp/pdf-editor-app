@@ -141,8 +141,9 @@ curl -fsSL https://raw.githubusercontent.com/multitools-ap-mvp/pdf-ticket-editor
 ---
 ---
 
-# Check It Out 
-
+# Stack 
+App is being powered by a NODE.JS Backend, simple HTML - Javascript Frontend. Docker integration & Python setup scripts.
+Very Simple, Very basic, Very good! showing back to basic pays of.
 
 
 
