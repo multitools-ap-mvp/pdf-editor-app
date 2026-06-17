@@ -1,10 +1,10 @@
 # **Apex Multi Tools PDF Editor V0.3.1**
 
-// The Thanos of PDF Editors
-// MultiTools PDF Editor
+The Thanos of PDF Editors
+MultiTools PDF Editor
 -
-// V0.3.1 Public Beta
-// Load pdf > Edit as html > create pdf
+V0.3.1 Public Beta
+Load pdf > Edit as html > create pdf
 ---
 <img width="364" height="289" alt="1781599322504" src="https://github.com/user-attachments/assets/ce0fd5d3-deb1-4cd7-b0a3-c84135a885a3" />
 
@@ -13,6 +13,8 @@
 > MultiTools PDF Editor is the future of FREE Open source PDF Editor! 
 
 > Installation/Usage You can use PDF Editor in many ways and on any OS!
+
+> FINALY! A Simple Easy to use PDF Editor
 
 **One-line install command**
 ```
@@ -24,18 +26,18 @@ wget -qO- https://raw.githubusercontent.com/multitools-ap-mvp/pdf-ticket-editor/
 
 # Structured PDF Editor
 
-// **Project MultiTools PDF Editor**
-// PDF → HTML → Edit → PDF
--
-// Convert any PDF to HTML
-// With document structure intact
-// Web Editor auto detects objects
-// Edit what you want
-// Create New PDF 
-// Download or Mail PDF
+> **Project MultiTools PDF Editor**       
+> **PDF → HTML → Edit → PDF**
+
+- Convert any PDF to HTML
+- With document structure intact
+- Web Editor auto detects objects
+- Edit what you want
+- Create New PDF 
+- Download or Mail PDF
 
 **Registration And Usage is open & 
-Free during BETA Testing**
+FREE during BETA Testing**
 
 ---
 
